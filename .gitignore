@@ -1,0 +1,19 @@
+# Distribution repo whitelist.
+# Ignore everything unless it is explicitly listed below.
+*
+
+# Repo metadata.
+!.gitignore
+!LICENSE
+!README.md
+
+# Source SVG and final font outputs.
+!smooth-cp437_src.svg
+!smooth-cp437.svg
+!smooth-cp437.ttf
+
+# Final condensed bitmap outputs.
+!bitmap/
+!bitmap/**/
+!bitmap/*.bmp
+!bitmap/**/*.bmp

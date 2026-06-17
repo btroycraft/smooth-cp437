@@ -1,0 +1,31 @@
+Smooth CP437 is licensed under the Creative Commons
+Attribution-ShareAlike 4.0 International License.
+
+License URL:
+https://creativecommons.org/licenses/by-sa/4.0/
+
+Upstream attribution:
+This work is based on the IBM VGA 9x14 bitmap font as distributed in
+The Ultimate Oldschool PC Font Pack / The Oldschool PC Font Resource by VileR.
+
+Upstream source:
+https://int10h.org/oldschool-pc-fonts/
+
+Upstream license:
+The Oldschool PC Font Resource font files are licensed by VileR under
+Creative Commons Attribution-ShareAlike 4.0 International.
+
+Changes made:
+This repository contains a square-aspect vector-graphics inverse derived from
+the IBM VGA 9x14 bitmap font. The source 9x14 forms were adapted to a wider
+square-cell format based on a 14x14 grid per glyph, with changes to utility
+glyphs where needed to support that wider format. The repository also includes
+generated SVG font, TrueType font, and condensed BMP raster outputs at multiple
+block sizes.
+
+Attribution form:
+Based on The Ultimate Oldschool PC Font Pack by VileR / INT10h.org,
+licensed under CC BY-SA 4.0.
+
+No warranty:
+The files are provided as-is, without warranty.
