@@ -16,7 +16,7 @@
 !smooth-cp437_df.ttf
 
 # Final condensed bitmap outputs.
-!bitmap/
-!bitmap/**/
-!bitmap/*.bmp
-!bitmap/**/*.bmp
+!bitmap_df/
+!bitmap_df/**/
+!bitmap_df/*.bmp
+!bitmap_df/**/*.bmp

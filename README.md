@@ -10,15 +10,18 @@ changes to utility glyphs where needed to support that wider format.
 
 ## Files
 
-- `smooth-cp437_src.svg`: source vector SVG sheet
-- `smooth-cp437.svg`: generated SVG font
-- `smooth-cp437.ttf`: generated TrueType font
-- `bitmap/`: generated BMP raster outputs at multiple block sizes
+- `smooth-cp437_original_src.svg`: source vector SVG sheet for the original variant
+- `smooth-cp437_original.svg`: generated SVG font for the original variant
+- `smooth-cp437_original.ttf`: generated TrueType font for the original variant
+- `smooth-cp437_df_src.svg`: source vector SVG sheet for the DF variant
+- `smooth-cp437_df.svg`: generated SVG font for the DF variant
+- `smooth-cp437_df.ttf`: generated TrueType font for the DF variant
+- `bitmap_df/`: generated DF BMP raster outputs at multiple block sizes
 
 The bitmap outputs are grouped by reduction method:
 
-- `bitmap/average/`: averaged-area outputs
-- `bitmap/majority/`: winner-takes-all area outputs
+- `bitmap_df/average/`: averaged-area outputs
+- `bitmap_df/majority/`: winner-takes-all area outputs
 - `non_14_multiples/`: block sizes that are not multiples of 14
 
 ## License
