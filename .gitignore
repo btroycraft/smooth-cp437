@@ -8,9 +8,12 @@
 !README.md
 
 # Source SVG and final font outputs.
-!smooth-cp437_src.svg
-!smooth-cp437.svg
-!smooth-cp437.ttf
+!smooth-cp437_original_src.svg
+!smooth-cp437_original.svg
+!smooth-cp437_original.ttf
+!smooth-cp437_df_src.svg
+!smooth-cp437_df.svg
+!smooth-cp437_df.ttf
 
 # Final condensed bitmap outputs.
 !bitmap/
