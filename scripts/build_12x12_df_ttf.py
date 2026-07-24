@@ -23,7 +23,7 @@ INKSCAPE_NS = "http://www.inkscape.org/namespaces/inkscape"
 NS = {"svg": SVG_NS, "inkscape": INKSCAPE_NS}
 
 SOURCE_SVG = Path("smooth-cp437_df-12x12_src.svg")
-OUTPUT_TTF = Path("smooth-cp437_12x12_df.ttf")
+OUTPUT_TTF = Path("smooth-cp437_df-12x12.ttf")
 LAYER_NAME = "Glyphs"
 GRID_COLS = 16
 GRID_ROWS = 16

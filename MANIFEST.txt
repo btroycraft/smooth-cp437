@@ -4,8 +4,8 @@ Smooth CP437 repository manifest
 Source files
 ------------
 
-smooth-cp437_ibm-vga_src.svg
-  Inkscape source sheet for the IBM VGA Smooth CP437 vector glyph set.
+smooth-cp437_ibm-vga-14x14_src.svg
+  Inkscape source sheet for the IBM VGA 14x14 Smooth CP437 vector glyph set.
 
 smooth-cp437_df-12x12_src.svg
   Inkscape source sheet for the 12x12 DF variant.
@@ -20,30 +20,27 @@ ignored by the build scripts.
 Final fonts
 -----------
 
-smooth-cp437_original.ttf
-  Generated TrueType font for the original Smooth CP437 variant.
+smooth-cp437_ibm-vga-14x14.ttf
+  Generated TrueType font for the IBM VGA 14x14 Smooth CP437 variant.
 
-smooth-cp437_df.ttf
-  Generated TrueType font for the DF Smooth CP437 variant.
-
-smooth-cp437_12x12_df.ttf
+smooth-cp437_df-12x12.ttf
   Generated fixed-pitch TrueType font for the 12x12 DF variant.
 
-smooth-cp437_14x14_df.ttf
+smooth-cp437_df-14x14.ttf
   Generated fixed-pitch TrueType font for the 14x14 DF variant.
 
 Bitmap outputs
 --------------
 
-bmp_ibm-vga/
-  Ignored generated bitmap sheets for smooth-cp437_ibm-vga_src.svg. The source
-  glyph cell is 14x14.
+bmp_ibm-vga-14x14/
+  Ignored generated bitmap sheets for smooth-cp437_ibm-vga-14x14_src.svg. The
+  source glyph cell is 14x14.
 
-bmp_df_12x12/
+bmp_df-12x12/
   Ignored generated bitmap sheets for smooth-cp437_df-12x12_src.svg. The source
   glyph cell is 12x12.
 
-bmp_df_14x14/
+bmp_df-14x14/
   Ignored generated bitmap sheets for smooth-cp437_df-14x14_src.svg. The source
   glyph cell is 14x14.
 
@@ -84,20 +81,21 @@ scripts/rasterize_svg.py
 
 scripts/build_12x12_df_ttf.py
   Builds the 12x12 DF TrueType font from smooth-cp437_df-12x12_src.svg. It
-  creates smooth-cp437_12x12_df.ttf from baked-in font metrics, glyph advance,
+  creates smooth-cp437_df-12x12.ttf from baked-in font metrics, glyph advance,
   cmap mapping, names, and OS/2/hhea properties. It imports only the SVG Glyphs
   layer and keeps imported outlines quadratic. The source, output, layer name,
   16x16 grid settings, and font properties are baked into the script. It errors
   if the expected CP437 glyph count or populated source cell count does not
   match the baked-in expectations.
 
-scripts/build_ibm_vga_ttf.py
-  Builds smooth-cp437_original.ttf from smooth-cp437_ibm-vga_src.svg. It uses
-  the shared SVG-to-TTF conversion code, imports only Glyphs, trims one source
-  pixel from each side of every 14x14 source cell, and bakes a 1200-unit
-  advance/EM with 900 ascent and 300 descent.
+scripts/build_ibm-vga-14x14_ttf.py
+  Builds smooth-cp437_ibm-vga-14x14.ttf from
+  smooth-cp437_ibm-vga-14x14_src.svg. It uses the shared SVG-to-TTF conversion
+  code, imports only Glyphs, trims one source pixel from each side of every
+  14x14 source cell, and bakes a 1200-unit advance/EM with 900 ascent and 300
+  descent.
 
 scripts/build_df_14x14_ttf.py
-  Builds smooth-cp437_14x14_df.ttf from smooth-cp437_df-14x14_src.svg. It uses
+  Builds smooth-cp437_df-14x14.ttf from smooth-cp437_df-14x14_src.svg. It uses
   the same one-pixel 14x14 cell trim and 900/300 vertical metrics as the IBM VGA
   14x14 builder.

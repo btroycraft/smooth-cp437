@@ -11,7 +11,7 @@ import build_12x12_df_ttf as builder
 
 
 builder.SOURCE_SVG = Path("smooth-cp437_df-14x14_src.svg")
-builder.OUTPUT_TTF = Path("smooth-cp437_14x14_df.ttf")
+builder.OUTPUT_TTF = Path("smooth-cp437_df-14x14.ttf")
 builder.CELL_TRIM_LEFT = 1.0
 builder.CELL_TRIM_TOP = 1.0
 builder.CELL_TRIM_RIGHT = 1.0

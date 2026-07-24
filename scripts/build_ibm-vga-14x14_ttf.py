@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the IBM VGA TrueType font from the SVG Glyphs layer."""
+"""Build the IBM VGA 14x14 TrueType font from the SVG Glyphs layer."""
 
 from __future__ import annotations
 
@@ -10,16 +10,16 @@ from pathlib import Path
 import build_12x12_df_ttf as builder
 
 
-builder.SOURCE_SVG = Path("smooth-cp437_ibm-vga_src.svg")
-builder.OUTPUT_TTF = Path("smooth-cp437_original.ttf")
+builder.SOURCE_SVG = Path("smooth-cp437_ibm-vga-14x14_src.svg")
+builder.OUTPUT_TTF = Path("smooth-cp437_ibm-vga-14x14.ttf")
 builder.CELL_TRIM_LEFT = 1.0
 builder.CELL_TRIM_TOP = 1.0
 builder.CELL_TRIM_RIGHT = 1.0
 builder.CELL_TRIM_BOTTOM = 1.0
 builder.EXPECTED_OUTPUT_NONEMPTY_CELLS = 252
-builder.FONT_NAME = "SmoothCP437Original"
-builder.FONT_FAMILY = "Smooth CP437 Original"
-builder.FONT_FULL_NAME = "Smooth CP437 Original"
+builder.FONT_NAME = "SmoothCP437-IBMVGA-14x14"
+builder.FONT_FAMILY = "Smooth CP437 IBM VGA 14x14"
+builder.FONT_FULL_NAME = "Smooth CP437 IBM VGA 14x14"
 builder.FONT_EM = 1200
 builder.FONT_ASCENT = 900
 builder.FONT_DESCENT = 300
@@ -31,18 +31,18 @@ builder.OS2_WIN_DESCENT = 300
 builder.HHEA_ASCENT = 900
 builder.HHEA_DESCENT = -300
 builder.SFNT_NAMES = (
-    ("English (US)", "Family", "Smooth CP437 Original"),
+    ("English (US)", "Family", "Smooth CP437 IBM VGA 14x14"),
     ("English (US)", "SubFamily", "Regular"),
-    ("English (US)", "UniqueID", "Smooth CP437 Original Regular"),
-    ("English (US)", "Fullname", "Smooth CP437 Original"),
+    ("English (US)", "UniqueID", "Smooth CP437 IBM VGA 14x14 Regular"),
+    ("English (US)", "Fullname", "Smooth CP437 IBM VGA 14x14"),
     ("English (US)", "Version", "Version 1.000"),
-    ("English (US)", "PostScriptName", "SmoothCP437Original"),
+    ("English (US)", "PostScriptName", "SmoothCP437-IBMVGA-14x14"),
 )
 
 
 def main() -> None:
     if len(sys.argv) != 1:
-        raise SystemExit("usage: python3 scripts/build_ibm_vga_ttf.py")
+        raise SystemExit("usage: python3 scripts/build_ibm-vga-14x14_ttf.py")
     builder.build_ttf(
         source_svg=builder.SOURCE_SVG,
         output_ttf=builder.OUTPUT_TTF,

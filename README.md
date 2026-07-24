@@ -11,15 +11,15 @@ source grids and generated fixed-pitch TrueType fonts for terminal use.
 
 ## Font Variants
 
-`smooth-cp437_original.ttf` is the IBM VGA 14x14 variant. It is a pixel-perfect
+`smooth-cp437_ibm-vga-14x14.ttf` is the IBM VGA 14x14 variant. It is a pixel-perfect
 interpolation of the IBM VGA 9x14 font into a 14x14 pixel cell for each glyph,
 with utility glyphs changed to account for the extra width.
 
-`smooth-cp437_14x14_df.ttf` uses the same 14x14 IBM VGA interpretation, but
+`smooth-cp437_df-14x14.ttf` uses the same 14x14 IBM VGA interpretation, but
 replaces CP437 glyphs 1 and 2 with the bearded faces from the Dwarf Fortress
 font.
 
-`smooth-cp437_12x12_df.ttf` is a custom interpretation of the Dwarf Fortress
+`smooth-cp437_df-12x12.ttf` is a custom interpretation of the Dwarf Fortress
 font based on a fusion of the IBM VGA font and the default Dwarf Fortress font.
 It also includes several small changes to fix glyph spacing for ASCII games such
 as Dwarf Fortress, where maps are rendered as ASCII text.
@@ -121,21 +121,20 @@ GNU tar, `gzip`, and 7-Zip's `7z` command. The Python packages listed in
 
 ## Files
 
-- `smooth-cp437_ibm-vga_src.svg`: source vector SVG sheet for the IBM VGA variant
-- `smooth-cp437_original.ttf`: generated TrueType font for the original variant
+- `smooth-cp437_ibm-vga-14x14_src.svg`: source vector SVG sheet for the IBM VGA 14x14 variant
+- `smooth-cp437_ibm-vga-14x14.ttf`: generated TrueType font for the IBM VGA 14x14 variant
 - `smooth-cp437_df-12x12_src.svg`: source vector SVG sheet for the 12x12 DF variant
-- `smooth-cp437_df.ttf`: generated TrueType font for the DF variant
-- `smooth-cp437_12x12_df.ttf`: generated fixed-pitch TrueType font for the 12x12 DF variant
+- `smooth-cp437_df-12x12.ttf`: generated fixed-pitch TrueType font for the 12x12 DF variant
 - `smooth-cp437_df-14x14_src.svg`: source vector SVG sheet for the 14x14 DF variant
-- `smooth-cp437_14x14_df.ttf`: generated fixed-pitch TrueType font for the 14x14 DF variant
-- `bmp_ibm-vga/`: ignored generated bitmap sheets for the IBM VGA variant
-- `bmp_df_12x12/`: ignored generated bitmap sheets for the 12x12 DF variant
-- `bmp_df_14x14/`: ignored generated bitmap sheets for the 14x14 DF variant
+- `smooth-cp437_df-14x14.ttf`: generated fixed-pitch TrueType font for the 14x14 DF variant
+- `bmp_ibm-vga-14x14/`: ignored generated bitmap sheets for the IBM VGA 14x14 variant
+- `bmp_df-12x12/`: ignored generated bitmap sheets for the 12x12 DF variant
+- `bmp_df-14x14/`: ignored generated bitmap sheets for the 14x14 DF variant
 - `smooth-cp437-fonts.7z`: generated 7-Zip distribution archive containing the three TrueType fonts and generated bitmap sheets
 - `smooth-cp437-fonts.tar.gz`: generated gzip-compressed tar distribution archive
-- `scripts/build_ibm_vga_ttf.py`: builds `smooth-cp437_original.ttf`
-- `scripts/build_12x12_df_ttf.py`: builds `smooth-cp437_12x12_df.ttf`
-- `scripts/build_df_14x14_ttf.py`: builds `smooth-cp437_14x14_df.ttf`
+- `scripts/build_ibm-vga-14x14_ttf.py`: builds `smooth-cp437_ibm-vga-14x14.ttf`
+- `scripts/build_12x12_df_ttf.py`: builds `smooth-cp437_df-12x12.ttf`
+- `scripts/build_df_14x14_ttf.py`: builds `smooth-cp437_df-14x14.ttf`
 - `scripts/rasterize_svg.py`: direct SVG rasterizer with majority and averaged transparent modes
 
 The bitmap outputs are grouped by reduction method:

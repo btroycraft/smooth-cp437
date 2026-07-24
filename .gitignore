@@ -11,7 +11,7 @@
 !requirements.txt
 
 # Source SVG files.
-!smooth-cp437_ibm-vga_src.svg
+!smooth-cp437_ibm-vga-14x14_src.svg
 !smooth-cp437_df-12x12_src.svg
 !smooth-cp437_df-14x14_src.svg
 
@@ -21,7 +21,6 @@
 
 # Local/generated direct rasterizer outputs.
 bitmap_df/
-bmp_ibm-vga/
-bmp_df_12x12/
-bmp_df_14x14/
-bmp_original/
+bmp_ibm-vga-14x14/
+bmp_df-12x12/
+bmp_df-14x14/

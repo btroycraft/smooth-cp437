@@ -4,23 +4,23 @@ SEVENZ ?= 7z
 TAR ?= tar
 GZIP ?= gzip
 
-IBM_VGA_SRC := smooth-cp437_ibm-vga_src.svg
+IBM_VGA_SRC := smooth-cp437_ibm-vga-14x14_src.svg
 DF12_SRC := smooth-cp437_df-12x12_src.svg
 DF14_SRC := smooth-cp437_df-14x14_src.svg
 
-IBM_VGA_TTF := smooth-cp437_original.ttf
-DF12_TTF := smooth-cp437_12x12_df.ttf
-DF14_TTF := smooth-cp437_14x14_df.ttf
+IBM_VGA_TTF := smooth-cp437_ibm-vga-14x14.ttf
+DF12_TTF := smooth-cp437_df-12x12.ttf
+DF14_TTF := smooth-cp437_df-14x14.ttf
 TTFS := $(IBM_VGA_TTF) $(DF12_TTF) $(DF14_TTF)
 
-BUILD_IBM_VGA_TTF := scripts/build_ibm_vga_ttf.py
+BUILD_IBM_VGA_TTF := scripts/build_ibm-vga-14x14_ttf.py
 BUILD_DF12_TTF := scripts/build_12x12_df_ttf.py
 BUILD_DF14_TTF := scripts/build_df_14x14_ttf.py
 RASTERIZE_SVG := scripts/rasterize_svg.py
 
-IBM_VGA_BITMAP_PREFIX := smooth-cp437_ibm-vga
-DF12_BITMAP_PREFIX := smooth-cp437_12x12_df
-DF14_BITMAP_PREFIX := smooth-cp437_14x14_df
+IBM_VGA_BITMAP_PREFIX := smooth-cp437_ibm-vga-14x14
+DF12_BITMAP_PREFIX := smooth-cp437_df-12x12
+DF14_BITMAP_PREFIX := smooth-cp437_df-14x14
 
 IBM_VGA_BASE_GLYPH_SIZE := 14
 DF12_BASE_GLYPH_SIZE := 12
@@ -34,12 +34,12 @@ IBM_VGA_NONMULTIPLE_SIZES := 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 45 46 
 DF12_NONMULTIPLE_SIZES := 25 26 27 28 29 30 31 32 33 34 35 37 38 39 40 41 42 43 44 45 46 47 49 50 51 52 53 54 55 56 57 58 59
 DF14_NONMULTIPLE_SIZES := 29 30 31 32 33 34 35 36 37 38 39 40 41 43 44 45 46 47 48 49 50 51 52 53 54 55 57 58 59 60 61 62 63 64 65 66 67 68 69
 
-IBM_VGA_MAJORITY_DIR := bmp_ibm-vga/majority
-DF12_MAJORITY_DIR := bmp_df_12x12/majority
-DF14_MAJORITY_DIR := bmp_df_14x14/majority
-IBM_VGA_AVERAGE_DIR := bmp_ibm-vga/average
-DF12_AVERAGE_DIR := bmp_df_12x12/average
-DF14_AVERAGE_DIR := bmp_df_14x14/average
+IBM_VGA_MAJORITY_DIR := bmp_ibm-vga-14x14/majority
+DF12_MAJORITY_DIR := bmp_df-12x12/majority
+DF14_MAJORITY_DIR := bmp_df-14x14/majority
+IBM_VGA_AVERAGE_DIR := bmp_ibm-vga-14x14/average
+DF12_AVERAGE_DIR := bmp_df-12x12/average
+DF14_AVERAGE_DIR := bmp_df-14x14/average
 
 IBM_VGA_MAJORITY_NONMULTIPLES_DIR := $(IBM_VGA_MAJORITY_DIR)/nonmultiples
 DF12_MAJORITY_NONMULTIPLES_DIR := $(DF12_MAJORITY_DIR)/nonmultiples
@@ -142,4 +142,4 @@ $(BITMAP_DIRS):
 	mkdir -p "$@"
 
 clean-generated:
-	rm -rf bmp_ibm-vga bmp_original bmp_df_12x12 bmp_df_14x14 $(PACKAGES)
+	rm -rf bmp_ibm-vga-14x14 bmp_df-12x12 bmp_df-14x14 $(PACKAGES)
