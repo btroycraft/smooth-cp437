@@ -17,9 +17,9 @@ builder.CELL_TRIM_TOP = 1.0
 builder.CELL_TRIM_RIGHT = 1.0
 builder.CELL_TRIM_BOTTOM = 1.0
 builder.EXPECTED_OUTPUT_NONEMPTY_CELLS = 252
-builder.FONT_NAME = "SmoothCP437-14x14DF"
-builder.FONT_FAMILY = "Smooth CP437 14x14 DF"
-builder.FONT_FULL_NAME = "Smooth CP437 14x14 DF"
+builder.FONT_NAME = "SmoothCP437-DF14x14"
+builder.FONT_FAMILY = "Smooth CP437 DF 14x14"
+builder.FONT_FULL_NAME = "Smooth CP437 DF 14x14"
 builder.FONT_EM = 1200
 builder.FONT_ASCENT = 900
 builder.FONT_DESCENT = 300
@@ -31,12 +31,12 @@ builder.OS2_WIN_DESCENT = 300
 builder.HHEA_ASCENT = 900
 builder.HHEA_DESCENT = -300
 builder.SFNT_NAMES = (
-    ("English (US)", "Family", "Smooth CP437 14x14 DF"),
+    ("English (US)", "Family", "Smooth CP437 DF 14x14"),
     ("English (US)", "SubFamily", "Regular"),
-    ("English (US)", "UniqueID", "Smooth CP437 14x14 DF Regular"),
-    ("English (US)", "Fullname", "Smooth CP437 14x14 DF"),
+    ("English (US)", "UniqueID", "Smooth CP437 DF 14x14 Regular"),
+    ("English (US)", "Fullname", "Smooth CP437 DF 14x14"),
     ("English (US)", "Version", "Version 1.000"),
-    ("English (US)", "PostScriptName", "SmoothCP437-14x14DF"),
+    ("English (US)", "PostScriptName", "SmoothCP437-DF14x14"),
 )
 
 

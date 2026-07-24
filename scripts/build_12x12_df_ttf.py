@@ -35,9 +35,9 @@ CELL_TRIM_TOP = 0.0
 CELL_TRIM_RIGHT = 0.0
 CELL_TRIM_BOTTOM = 0.0
 
-FONT_NAME = "SmoothCP437-12x12DF"
-FONT_FAMILY = "Smooth CP437 12x12 DF"
-FONT_FULL_NAME = "Smooth CP437 12x12 DF"
+FONT_NAME = "SmoothCP437-DF12x12"
+FONT_FAMILY = "Smooth CP437 DF 12x12"
+FONT_FULL_NAME = "Smooth CP437 DF 12x12"
 FONT_WEIGHT = "Book"
 FONT_VERSION = "1.000"
 FONT_EM = 1200
@@ -55,12 +55,12 @@ HHEA_ASCENT = 1000
 HHEA_DESCENT = -200
 PANOSE = (2, 11, 6, 9, 2, 2, 5, 2, 2, 4)
 SFNT_NAMES = (
-    ("English (US)", "Family", "Smooth CP437 12x12 DF"),
+    ("English (US)", "Family", "Smooth CP437 DF 12x12"),
     ("English (US)", "SubFamily", "Regular"),
-    ("English (US)", "UniqueID", "Smooth CP437 12x12 DF Regular"),
-    ("English (US)", "Fullname", "Smooth CP437 12x12 DF"),
+    ("English (US)", "UniqueID", "Smooth CP437 DF 12x12 Regular"),
+    ("English (US)", "Fullname", "Smooth CP437 DF 12x12"),
     ("English (US)", "Version", "Version 1.000"),
-    ("English (US)", "PostScriptName", "SmoothCP437-12x12DF"),
+    ("English (US)", "PostScriptName", "SmoothCP437-DF12x12"),
 )
 
 CP437_DISPLAY_CODEPOINTS = [
